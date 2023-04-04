@@ -70,16 +70,194 @@ flowchart LR
     Start --> Stop
 ```
 
-```mermaid
-gantt
-dateFormat  YYYY-MM-DD
-title Adding GANTT diagram to mermaid
-excludes weekdays 2014-01-10
+#### Título 
 
-section A section
-Completed task            :done,    des1, 2014-01-06,2014-01-08
-Active task               :active,  des2, 2014-01-09, 3d
-Future task               :         des3, after des2, 5d
-Future task2               :         des4, after des3, 5d
+* Título se coloca como mostra abaixo
 
+```md
+---
+title: Node with text
+---
 ```
+
+```mermaid
+---
+title: Node with text
+---
+flowchart LR
+    id1[This is the text in the box]
+```
+
+#### Formatos
+
+* Podemos colocar vários formatos, como mostra abaixo
+
+**RETÂNGULO**
+
+```md
+flowchart
+    id1[This is the text in the box]
+```
+
+```mermaid
+flowchart
+    id1[This is the text in the box]
+```
+
+**RETÂNGULO ARREDONDADO**
+
+```md
+flowchart
+    id1(This is the text in the box)
+```
+
+```mermaid
+flowchart
+    id1(This is the text in the box)
+```
+
+**CIRCULAR**
+
+```md
+flowchart
+    id1([This is the text in the box])
+```
+
+```mermaid
+flowchart
+    id1([This is the text in the box])
+```
+
+**SUBROTINA**
+
+```md
+flowchart
+    id1[[This is the text in the box]]
+```
+
+```mermaid
+flowchart
+    id1[[This is the text in the box]]
+```
+
+**CILINDRO**
+
+```md
+flowchart
+    id1[(Database)]
+```
+
+```mermaid
+flowchart
+    id1[(Database)]
+```
+
+**CÍRCULO**
+
+```md
+flowchart
+    id1((This is the text in the circle))
+```
+
+```mermaid
+flowchart
+    id1((This text circle))
+```
+
+**TIPO BANDEIRINHA**
+
+```md
+flowchart
+    id1>This is the text in the box]
+```
+
+```mermaid
+flowchart
+    id1>This is the text in the box]
+```
+
+**LOSÂNGO**
+
+```md
+flowchart
+    id1{This is the text in the box}
+```
+
+```mermaid
+flowchart
+    id1{This is the text in the box}
+```
+
+**HEXAGONO**
+
+```md
+flowchart
+    id1{{This is the text in the box}}
+```
+
+```mermaid
+flowchart
+    id1{{This is the text in the box}}
+```
+
+**PARALELOGRAMA**
+
+```md
+flowchart
+    id1[/This is the text in the box/]
+```
+
+```mermaid
+flowchart
+    id1[/This is the text in the box/]
+```
+
+**PARALELOGRAMA PARA O OUTRO LADO**
+
+```md
+flowchart
+    id1[\This is the text in the box\]
+```
+
+```mermaid
+flowchart
+    id1[\This is the text in the box\]
+```
+
+**TRAPÉZIO**
+
+```md
+flowchart
+    A[/Christmas\]
+```
+
+```mermaid
+flowchart
+    A[/Christmas\]
+```
+
+**TRAPÉZIO DE CABEÇA PARA BAIXO**
+
+```md
+flowchart
+    B[\Go shopping/]
+```
+
+```mermaid
+flowchart
+    B[\Go shopping/]
+```
+
+**CIRCULO DUPLO**
+
+```md
+flowchart
+    id1(((This is the text in the circle)))
+```
+
+```mermaid
+flowchart
+    id1(((This is the text in the circle)))
+```
+
+
