@@ -26,7 +26,7 @@ flowchart TB
 
 ```md
 flowchart TD
-    Start --> Stop
+    Stop --> Start
 ```
 
 ```mermaid
