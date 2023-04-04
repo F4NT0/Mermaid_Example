@@ -58,4 +58,14 @@ flowchart RL
     Start --> Stop
 ```
 
-****
+**Left to Right**
+
+```md
+flowchart LR
+    Start --> Stop
+```
+
+```mermaid
+flowchart LR
+    Start --> Stop
+```
