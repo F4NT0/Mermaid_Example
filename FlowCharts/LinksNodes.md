@@ -91,7 +91,7 @@ Conexão Aberta
 ---
 
 flowchart LR
-    A---|This is the text|B
+    A---|text|B
 ```
 
 ```mermaid
@@ -100,7 +100,7 @@ Conexão Aberta
 ---
 
 flowchart LR
-    A---|This is the text|B
+    A---|text|B
 ```
 
 ```md
@@ -156,3 +156,96 @@ Conexão Forte
 flowchart LR
    A == text ==> B
 ```
+
+### **Conexão de Links**
+
+* Agora podemos conectar como quisermos
+
+##### **Nodo para Nodo constante**
+
+```md
+flowchart LR
+---
+A vai para B e B vai para C
+---
+   A -- text --> B -- text2 --> C
+```
+
+```mermaid
+flowchart LR
+---
+A vai para B e B vai para C
+---
+   A -- text --> B -- text2 --> C
+```
+
+```md
+flowchart LR
+---
+A vai para B e B vai para C
+---
+   A -- text -- B -- text2 -- C
+```
+
+```mermaid
+flowchart LR
+---
+A vai para B e B vai para C
+---
+   A -- text -- B -- text2 -- C
+```
+
+```md
+flowchart LR
+---
+A vai para B e B vai para C
+---
+   A -. text .-> B -. text2 .-> C
+```
+
+```mermaid
+flowchart LR
+---
+A vai para B e B vai para C
+---
+   A -. text .-> B -. text2 .-> C
+```
+
+```md
+flowchart LR
+---
+A vai para B e B vai para C
+---
+   A == text ==> B == text2 ==> C
+```
+
+```mermaid
+flowchart LR
+---
+A vai para B e B vai para C
+---
+   A == text ==> B == text2 ==> C
+```
+
+#### **Multiplos Nodos na mesma linha**
+
+* Podemos colocar conexões tudo na mesma linha de multiplos nodos
+
+```md
+---
+A vai para B e B vai para D
+B vai para C e C vai para D
+---
+flowchart LR
+   a --> b & c--> d
+```
+
+```mermaid
+---
+A vai para B e B vai para D
+B vai para C e C vai para D
+---
+flowchart LR
+   a --> b & c--> d
+```
+
