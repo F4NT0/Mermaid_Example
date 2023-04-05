@@ -60,10 +60,27 @@ flowchart
     A[[Windows 11]]
 ```
 
+* Exemplo:
+
 ```mermaid
 flowchart
     A[\Dados\] --> B[[Windows 11]]
     B --> C[Acessar Powershell]
 ```
 
+### Banco de dados
 
+É a visualização do banco de dados para sabermos qual é o tipo de banco
+
+```mermaid
+flowchart
+    A[(Database)]
+```
+
+* Exemplo:
+
+```mermaid
+flowchart
+    A[(PostgreSQL 11)] --> B[\Placa\]
+    B --> C[Verificar Veículo]
+```
