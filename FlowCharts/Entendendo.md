@@ -36,11 +36,34 @@ flowchart LR
 Uma decisão é um escolha entre `Sim` ou `Não` que define o que vai ocorrer, indo para diferentes finalizações
 
 ```mermaid
+flowchart
+    A{Pergunta} -->|Sim| B[Ação Sim]
+    A -->|Não| C[Ação Não]
+```
+
+* Exemplo:
+
+```mermaid
 flowchart TD
     A[Definir nome] --> B{Nome bem definido?}
     B -->|Sim| C([Fim])
     B -->|Não| D[Repensar Nome]
     D --> B
+```
+
+### Processo Pré-Definido
+
+Um processo pré-definido é uma subrotina que acontece em fluxogramas de programação, onde é uma subrotina que pode ser chamado quantas vezes preciso dentro do fluxograma.
+
+```mermaid
+flowchart
+    A[[Windows 11]]
+```
+
+```mermaid
+flowchart
+    A[\Dados\] --> B[[Windows 11]]
+    B --> C[Acessar Powershell]
 ```
 
 
