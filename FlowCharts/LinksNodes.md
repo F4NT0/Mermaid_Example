@@ -82,6 +82,59 @@ flowchart LR
     A ~~~ B
 ```
 
+### **Novos tipos de Flechas**
+
+```md
+---
+Conexão de Ponto
+---
+flowchart LR
+    A --o B
+```
+
+```mermaid
+---
+Conexão de Ponto
+---
+flowchart LR
+    A --o B
+```
+
+---
+
+```md
+---
+Conexão de Xis
+---
+flowchart LR
+    A --x B
+```
+
+```mermaid
+---
+Conexão de Xis
+---
+flowchart LR
+    A --x B
+```
+
+---
+
+```md
+---
+Conexão de Flechas Duplas
+---
+flowchart LR
+    A <--> B
+```
+
+```mermaid
+---
+Conexão de Flechas Duplas
+---
+flowchart LR
+    A <--> B
+```
 
 ### **Texto dentro da conexão**
 
@@ -164,66 +217,66 @@ flowchart LR
 ##### **Nodo para Nodo constante**
 
 ```md
-flowchart LR
 ---
 A vai para B e B vai para C
 ---
+flowchart LR
    A -- text --> B -- text2 --> C
 ```
 
 ```mermaid
-flowchart LR
 ---
 A vai para B e B vai para C
 ---
+flowchart LR
    A -- text --> B -- text2 --> C
 ```
 
 ```md
-flowchart LR
 ---
 A vai para B e B vai para C
 ---
-   A -- text -- B -- text2 -- C
+flowchart LR
+   A ---|text|B ---|text2|C
 ```
 
 ```mermaid
-flowchart LR
 ---
 A vai para B e B vai para C
 ---
-   A -- text -- B -- text2 -- C
+flowchart LR
+   A ---|text|B ---|text2|C
 ```
 
 ```md
-flowchart LR
 ---
 A vai para B e B vai para C
 ---
+flowchart LR
    A -. text .-> B -. text2 .-> C
 ```
 
 ```mermaid
-flowchart LR
 ---
 A vai para B e B vai para C
 ---
+flowchart LR
    A -. text .-> B -. text2 .-> C
 ```
 
 ```md
-flowchart LR
 ---
 A vai para B e B vai para C
 ---
+flowchart LR
    A == text ==> B == text2 ==> C
 ```
 
 ```mermaid
-flowchart LR
 ---
 A vai para B e B vai para C
 ---
+flowchart LR
    A == text ==> B == text2 ==> C
 ```
 
@@ -237,7 +290,7 @@ A vai para B e B vai para D
 B vai para C e C vai para D
 ---
 flowchart LR
-   a --> b & c--> d
+   a --> b & c --> d
 ```
 
 ```mermaid
@@ -246,6 +299,49 @@ A vai para B e B vai para D
 B vai para C e C vai para D
 ---
 flowchart LR
-   a --> b & c--> d
+   a --> b & c --> d
 ```
 
+---
+
+```md
+---
+Podemos colocar dois nodos juntos se conectando com outros dois nodos
+---
+flowchart TB
+    A & B --> C & D
+```
+
+```mermaid
+---
+Podemos colocar dois nodos juntos se conectando com outros dois nodos
+---
+flowchart TB
+    A & B --> C & D
+```
+
+#### **Multiplos Nodos em Linhas Diferentes**
+
+* O padrão é ser em diferentes linhas, como abaixo
+
+```md
+---
+Nodos conectados
+---
+flowchart TB
+    A --> C
+    A --> D
+    B --> C
+    B --> D
+```
+
+```mermaid
+---
+Nodos conectados
+---
+flowchart TB
+    A --> C
+    A --> D
+    B --> C
+    B --> D
+```
