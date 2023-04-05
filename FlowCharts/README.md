@@ -1,6 +1,6 @@
 # Como construir FlowCharts
 
-* `Flowchart` em portugues significa $\color{red}Fluxograma$ que descreve um processo, sistema ou algoritmo de computador. São amplamente utilizados em várias áreas para documentar, estudar planejar, melhorar e comunicar processos.
+* `Flowchart` em portugues significa $\color{yellow}Fluxograma$ que descreve um processo, sistema ou algoritmo de computador. São amplamente utilizados em várias áreas para documentar, estudar planejar, melhorar e comunicar processos.
 
 ### Documentação
 
@@ -10,5 +10,6 @@ Abaixo os Links para os documentos ensinando como usar o Mermaid e como construi
 - [Orientação dos Nodos](Orientacao.md)
 - [Conexões dos Nodos](Conexoes.md)
 - [Formatos](Formatos.md)
+- [Characteres em HTML](HtmlCharacteres.md)
 - [Entendendo um Fluxograma](Entendendo.md)
 - [Construindo Fluxogramas](Construindo.md)
